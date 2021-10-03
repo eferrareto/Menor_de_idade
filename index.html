@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Welcome</title>
 </head>
 <body>
@@ -14,15 +15,28 @@
         </div>
     </header>
     <main>
-        <form>
             <label for="name">Nome:</label>
-            <input type="text" name="nam" id="name" placeholder="Enter Name">
+            <input type="text" name="nam" id="name" placeholder="Nome">
+            <br>
             <label for="idade">Ano de Nascimento:</label>
-            <input type="text" name="idade" id="idade" placeholder="dia/mês/ano">
-            <p id="Resposta"></p>
+            <input type="text" name="idad" id="idade" placeholder="Ano de Nascimento">
             <p><input type="checkbox">Remember me</p>
             <button onclick="login()">Login</button>
-        </form>
+        <p id="Resposta"></p>
     </main>
+    <script>
+        function login(){
+            let nome = document.getElementById('name');
+            let ano = document.getElementById('idade');
+            let idade = new Date();
+            let n = nome.value
+            let a = Number(ano.value)
+            if(idade.getFullYear() - a < 18){
+                document.getElementById('Resposta').innerHTML = `O usuário ${n} é menor de idade, poís possui ${idade.getFullYear() - a} anos`
+            } else{
+                document.getElementById('Resposta').innerHTML = `O usuário ${n} é maior de idade, pois possui ${idade.getFullYear() - a} anos`
+            }
+        }
+    </script>
 </body>
 </html>
