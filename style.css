@@ -1,28 +1,59 @@
 body{
+    background-color: rgba(192, 241, 241, 0.726);
     font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 header{
     text-align: center;
 }
 .texto{
     position: absolute;
-    color:rgb(0, 0, 0);
     right: 560px;
     top: 80px;
-    color: #ffff;
-    background-color: rgba(95, 158, 160, 0.438);
+    color: rgb(255, 255, 255);
+    background-color: rgba(95, 158, 160, 0.767);
 }
 main{
-    background-color: aquamarine;
+    background-color: #ffff;
     margin: auto;
-    width: 500px;
-    height: 150px;
+    width: 400px;
+    height: auto;
+    padding: 50px;
     text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
 }
 input{
-    border: none;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.295);
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #9e9e9e;
+    outline: none;
+    transition: .2s ease-in-out;
+    box-sizing: border-box;
 }
 label{
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#fnome, #fdata{
+    color: rgb(94, 92, 92);
+    text-align: left;
+}
+button{
+    border: none;
     font-weight: bolder;
+    color: #ffff;
+    cursor: pointer;
+    border-radius: 40px;
+    width: 125px;
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(55, 187, 55);
+}
+button:hover{
+    background-color: rgb(126, 106, 106);
 }

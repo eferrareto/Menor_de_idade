@@ -15,14 +15,19 @@
         </div>
     </header>
     <main>
-            <label for="name">Nome:</label>
-            <input type="text" name="nam" id="name" placeholder="Nome">
+            <div id="fnome">
+                <label for="name">Nome Completo:</label>
+                <input type="text" name="n" id="name" placeholder="Nome">
+            </div>
             <br>
-            <label for="idade">Ano de Nascimento:</label>
-            <input type="text" name="idad" id="idade" placeholder="Ano de Nascimento">
+            <div id="fdata">
+                <label for="idade">Ano de Nascimento:</label>
+                <input type="text" name="i" id="idade" placeholder="Ano de Nascimento">
+            </div>
             <p><input type="checkbox">Remember me</p>
+            <p id="Resposta"></p>
             <button onclick="login()">Login</button>
-        <p id="Resposta"></p>
+        
     </main>
     <script>
         function login(){
